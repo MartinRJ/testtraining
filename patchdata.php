@@ -6,7 +6,7 @@ define("separator", ",");
 define(needle, "=");
 $entityBody = file_get_contents('php://input');
 $entityBody = substr($entityBody, 0, maxlength);
-$entityBodystr_replace("$entityBody", ",,", ",");
+$entityBody = str_replace("$entityBody", ",,", ",");
 $pos = strpos($entityBody, needle);
 $newcsv = "";
 // Make sure the needle exists
