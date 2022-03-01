@@ -1,9 +1,9 @@
 <?php
-define(filename, "data.txt");
-define(maxlength, 1024);
+define("filename", "data.txt");
+define("maxlength", 1024);
 define("max", 11000);
 define("separator", ",");
-define(needle, "=");
+define("needle", "=");
 $entityBody = file_get_contents('php://input');
 $entityBody = substr($entityBody, 0, maxlength);
 $pos = strpos($entityBody, needle);
@@ -17,6 +17,8 @@ if ($pos !== false)
         if (is_numeric($index) && $index >= 0)
         {
             $value = substr($entityBody, $pos+1);
+            // Comma is the delimiter in our csv file and may never be part of a value
+            $value = str_replace(",", "", $value);
 
             if (($handle = fopen(filename, "r")) !== FALSE)
             {
