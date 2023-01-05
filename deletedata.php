@@ -1,6 +1,6 @@
 <?php
-define(filename, "data.txt");
-define(maxlength, 1024);
+define("filename", "data.txt");
+define("maxlength", 1024);
 define("max", 11000);
 define("separator", ",");
 $entityBody = file_get_contents('php://input');

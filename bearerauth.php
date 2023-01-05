@@ -1,5 +1,5 @@
 <?php
-define(bearer, "Bearer EXAMPLETOKEN");
+define("bearer", "Bearer EXAMPLETOKEN");
 
 if ($_SERVER["HTTP_AUTHORIZATION"] == bearer)
 {

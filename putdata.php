@@ -1,6 +1,6 @@
 <?php
-define(filename, "data.txt");
-define(maxlength, 1024);
+define("filename", "data.txt");
+define("maxlength", 1024);
 $entityBody = file_get_contents('php://input');
 $entries = urldecode(substr($entityBody, 0, maxlength));
 

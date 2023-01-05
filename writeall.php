@@ -1,7 +1,7 @@
 <?php
-define(filename, "data.txt");
-define(varname, "entries");
-define(maxlength, 1024);
+define("filename", "data.txt");
+define("varname", "entries");
+define("maxlength", 1024);
 $entries = urldecode(substr($_POST[varname], 0, maxlength));
 
 // Make sure the file exists

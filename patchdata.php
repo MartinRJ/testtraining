@@ -1,9 +1,9 @@
 <?php
-define(filename, "data.txt");
-define(maxlength, 1024);
+define("filename", "data.txt");
+define("maxlength", 1024);
 define("max", 11000);
 define("separator", ",");
-define(needle, "=");
+define("needle", "=");
 $entityBody = file_get_contents('php://input');
 $entityBody = substr($entityBody, 0, maxlength);
 $pos = strpos($entityBody, needle);

@@ -1,6 +1,6 @@
 <?php
 // Read contents of database and echo them.
-define(filename, "data.txt");
+define("filename", "data.txt");
 define("linestart", "Entry #");
 define("linemid", ":&nbsp;");
 define("max", 11000);

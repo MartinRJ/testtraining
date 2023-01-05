@@ -1,8 +1,8 @@
 <?php
-define(username, "user");
-define(password, "secretpassword");
-define(bearer, "EXAMPLETOKEN");
-define(htmlform, '<!doctype html>
+define("username", "user");
+define("password", "secretpassword");
+define("bearer", "EXAMPLETOKEN");
+define("htmlform", '<!doctype html>
 <html>
   <head>
     <title>Form</title>

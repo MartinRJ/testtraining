@@ -1,7 +1,7 @@
 <?php
-define(printformdata1, "The following data was submitted:\nFirst name: ");
-define(printformdata2, "\nCity: ");
-define(htmlform, '<!doctype html>
+define("printformdata1", "The following data was submitted:\nFirst name: ");
+define("printformdata2", "\nCity: ");
+define("htmlform", '<!doctype html>
 <html>
   <head>
     <title>Form</title>
